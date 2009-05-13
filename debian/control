@@ -1,0 +1,14 @@
+Source: jolicloud-apt-config
+Section: misc
+Priority: optional
+Maintainer: Jolicloud developers <developers@jolicloud.org>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.0
+Homepage: http://www.jolicloud.com
+
+Package: jolicloud-apt-config
+Architecture: all
+Description: Jolicloud APT configuration
+ Configures your APT system to give priority
+ to Jolicloud packages so that you have a stable
+ applications directory and Jolicloud system.
