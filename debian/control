@@ -1,5 +1,5 @@
 Source: jolicloud-apt-config
-Section: misc
+Section: jolicloud
 Priority: optional
 Maintainer: Jolicloud developers <developers@jolicloud.org>
 Build-Depends: debhelper (>= 7)
