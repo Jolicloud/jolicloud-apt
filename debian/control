@@ -1,4 +1,4 @@
-Source: jolicloud-apt-config
+Source: jolicloud-apt
 Section: jolicloud
 Priority: optional
 Maintainer: Jolicloud developers <developers@jolicloud.org>
