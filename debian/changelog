@@ -1,3 +1,11 @@
+jolicloud-apt (0.2) robby; urgency=low
+
+  * Set package secton to "jolicloud"
+  * Renamed source packge to jolicloud-apt
+  * Added jolicloud-apt-test-repository package
+
+ -- Adam McDaniel <adam@jolicloud.org>  Wed, 16 Sep 2009 08:12:54 -0600
+
 jolicloud-apt-config (0.1) robby; urgency=low
 
   * First release
