@@ -12,3 +12,9 @@ Description: Jolicloud APT configuration
  Configures your APT system to give priority
  to Jolicloud packages so that you have a stable
  applications directory and Jolicloud system.
+
+Package: jolicloud-apt-test-repository
+Architecture: all
+Description: Jolicloud Test APT configuration
+ Configures your APT system to add the jolicloud-test repository into your
+ netbook.
