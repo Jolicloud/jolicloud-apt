@@ -1,4 +1,11 @@
-jolicloud-apt (0.2) robby; urgency=low
+jolicloud-apt (0.3) robby; urgency=low
+
+  * Added jolicloud-apt-repository package for the standard APT URL
+  * Created install files for /etc/apt/sources.list.d repository URLs
+
+ -- Adam McDaniel <adam@jolicloud.org>  Wed, 16 Sep 2009 08:35:19 -0600
+
+jolicloud-apt (0.2) UNRELEASED; urgency=low
 
   * Set package secton to "jolicloud"
   * Renamed source packge to jolicloud-apt
