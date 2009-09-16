@@ -13,6 +13,12 @@ Description: Jolicloud APT configuration
  to Jolicloud packages so that you have a stable
  applications directory and Jolicloud system.
 
+Package: jolicloud-apt-repository
+Architecture: all
+Description: Jolicloud APT configuration
+ Configures your APT system to add the jolicloud repository into your
+ netbook.
+
 Package: jolicloud-apt-test-repository
 Architecture: all
 Description: Jolicloud Test APT configuration
