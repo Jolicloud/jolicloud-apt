@@ -16,6 +16,14 @@ cat - >> /etc/apt/preferences <<EOF
 Package: *
 Pin: release o=Jolicloud
 Pin-Priority: 900
+
+Package: *
+Pin: release a=karmic
+Pin-Priority: 700
+
+Package: *
+Pin: release o=Ubuntu
+Pin-Priority: 800
 #END JOLICLOUD AUTO CONFIG
 EOF
 
