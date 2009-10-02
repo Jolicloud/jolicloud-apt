@@ -19,11 +19,11 @@ Pin-Priority: 900
 
 Package: *
 Pin: release a=karmic
-Pin-Priority: 700
+Pin-Priority: 400
 
 Package: *
 Pin: release o=Ubuntu
-Pin-Priority: 800
+Pin-Priority: 500
 #END JOLICLOUD AUTO CONFIG
 EOF
 
