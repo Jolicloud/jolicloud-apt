@@ -1,3 +1,21 @@
+jolicloud-apt (0.4) robby; urgency=low
+
+  [ Adam McDaniel ]
+  * Set Karmic packages to have a lower priority (for now) than the rest
+    of ubuntu
+  * Update dependencies on jolicloud-apt-repository
+  * Adjust Karmic to be below 400, set the rest of ubuntu to default 500
+  * Import Jolicloud's public key into the system's apt-key utility
+
+  [ Benjamin Ryzman ]
+  * Add pidgin, vlc and wine third party repositories
+  * Add third party packages for Medibuntu, Miro, Openoffice, Telepathy,
+    Transmission
+  * Fix-lintian: W: jolicloud-apt-config: command-with-path-in-
+    maintainer-script postinst:34 /usr/bin/apt-key
+
+ -- Benjamin Ryzman <benjamin@jolicloud.org>  Thu, 22 Oct 2009 16:58:29 +0200
+
 jolicloud-apt (0.3) robby; urgency=low
 
   * Added jolicloud-apt-repository package for the standard APT URL
