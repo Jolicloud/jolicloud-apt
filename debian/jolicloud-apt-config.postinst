@@ -31,7 +31,7 @@ EOF
 # Import Jolicloud's public key into the system's apt-key utility as an
 # authenticated repository.
 
-/usr/bin/apt-key add - <<EOF
+apt-key add - <<EOF
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG v1.4.9 (GNU/Linux)
 
