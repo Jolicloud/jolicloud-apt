@@ -1,3 +1,9 @@
-etc/apt/sources.list.d/vlc.list
+etc/apt/sources.list.d/medibuntu.list
+etc/apt/sources.list.d/miro.list
+etc/apt/sources.list.d/openoffice.list
 etc/apt/sources.list.d/pidgin.list
+etc/apt/sources.list.d/telepathy.list
+etc/apt/sources.list.d/transmissionbt.list
+etc/apt/sources.list.d/vlc.list
 etc/apt/sources.list.d/wine.list
+usr/share/jolicloud-apt/keys
