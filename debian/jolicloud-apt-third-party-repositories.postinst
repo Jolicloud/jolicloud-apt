@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+# keys
+cat /usr/share/jolicloud-apt/keys | cut -d " " -f 1 | \
+while read key
+	do apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ${key}
+done
+
+exit 0

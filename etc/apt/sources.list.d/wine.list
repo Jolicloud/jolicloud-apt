@@ -1,0 +1,4 @@
+# Wine for Ubuntu and Ubuntu derivatives
+# Warning: these are beta packages
+deb http://wine.budgetdedicated.com/apt jaunty main
+#deb-src http://wine.budgetdedicated.com/apt jaunty main
