@@ -17,15 +17,22 @@ Package: jolicloud-apt-repository
 Architecture: all
 Depends: jolicloud-apt-config
 Description: Jolicloud APT configuration
- Configures your APT system to add the jolicloud repository into your
+ Configures your APT system to add the Jolicloud repository into your
  netbook.
 
 Package: jolicloud-apt-test-repository
 Architecture: all
 Depends: jolicloud-apt-config, jolicloud-apt-repository
 Description: Jolicloud Test APT configuration
- Configures your APT system to add the jolicloud-test repository into your
+ Configures your APT system to add the Jolicloud (test) repository into your
  netbook.
+
+Package: jolicloud-apt-dev-repository
+Architecture: all
+Depends: jolicloud-apt-config, jolicloud-apt-repository
+Description: Jolicloud Development APT configuration
+ Configures your APT system to add the Jolicloud (development) repository
+ into your netbook.
 
 Package: jolicloud-apt-third-party-repositories
 Architecture: all
