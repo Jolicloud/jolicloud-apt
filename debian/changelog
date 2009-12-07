@@ -1,3 +1,9 @@
+jolicloud-apt (0.5) robby; urgency=low
+
+  * Created a jolicloud (development) repository package
+
+ -- Adam McDaniel <adam@jolicloud.org>  Mon, 07 Dec 2009 22:59:28 +0100
+
 jolicloud-apt (0.4) robby; urgency=low
 
   [ Adam McDaniel ]
