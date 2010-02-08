@@ -1,2 +1,2 @@
-deb http://apt.jolicloud.org robby main directory jolicloud
-deb-src http://apt.jolicloud.org robby main directory jolicloud
+deb http://apt.jolicloud.org vincent main directory jolicloud
+deb-src http://apt.jolicloud.org vincent main directory jolicloud
