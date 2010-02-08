@@ -1,0 +1,11 @@
+Package: *
+Pin: release o=Jolicloud
+Pin-Priority: 900
+
+Package: *
+Pin: release a=karmic
+Pin-Priority: 400
+
+Package: *
+Pin: release o=Ubuntu
+Pin-Priority: 500

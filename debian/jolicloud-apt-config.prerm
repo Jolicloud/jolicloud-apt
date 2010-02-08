@@ -10,24 +10,4 @@ set -e
 
 #DEBHELPER#
 
-TMP_FILE="/etc/apt/preferences.jolicloud-apt-config~"
-
-rm -f "$TMP_FILE"
-IN_JC_PART="no"
-while read line ; do
-	if [ "$line" == "#START JOLICLOUD AUTO CONFIG" ]; then
-		IN_JC_PART="yes"
-	fi
-	if [ "$IN_JC_PART" == "no" ]; then
-		echo "$line" >> "$TMP_FILE"
-	fi
-        if [ "$line" == "#END JOLICLOUD AUTO CONFIG" ]; then
-	        IN_JC_PART="no"
-	fi
-done < /etc/apt/preferences
-if [ -e "$TMP_FILE" ]; then
-	mv -f "$TMP_FILE" /etc/apt/preferences
-else
-	rm -f /etc/apt/preferences
-fi
 exit 0
