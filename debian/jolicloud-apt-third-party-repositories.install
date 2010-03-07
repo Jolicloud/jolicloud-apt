@@ -6,5 +6,4 @@ etc/apt/sources.list.d/telepathy.list
 etc/apt/sources.list.d/transmissionbt.list
 etc/apt/sources.list.d/vlc.list
 etc/apt/sources.list.d/wine.list
-etc/apt/sources.list.d/firefox-stable.list
 usr/share/jolicloud-apt/keys
