@@ -1,3 +1,10 @@
+jolicloud-apt (0.6) robby; urgency=low
+
+  [ Adam McDaniel ]
+  * Enable Jolicloud's deb-src URLs by default
+
+ -- Adam McDaniel <adam@jolicloud.org>  Sun, 07 Mar 2010 11:31:30 -0700
+
 jolicloud-apt (0.5) robby; urgency=low
 
   * Created a jolicloud (development) repository package
