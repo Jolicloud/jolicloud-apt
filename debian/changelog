@@ -1,3 +1,10 @@
+jolicloud-apt (0.6.1) robby; urgency=low
+
+  * Do not reinstall third-party keys if they are already in APT's
+    keyring
+
+ -- Adam McDaniel <adam@jolicloud.org>  Tue, 16 Mar 2010 11:09:05 -0600
+
 jolicloud-apt (0.6) robby; urgency=low
 
   [ Adam McDaniel ]
