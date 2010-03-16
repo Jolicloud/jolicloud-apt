@@ -4,8 +4,10 @@ set -e
 
 # keys
 cat /usr/share/jolicloud-apt/keys | awk '{print $1}' | \
-while read key
-	do apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ${key}
+while read key; do
+	if ! `apt-key list | grep -q ${key}`; then
+		apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ${key}
+	fi
 done
 
 exit 0
