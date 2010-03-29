@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+case "$1" in
+    remove|pruge)
+        echo "* Restoring google-chrome's APT repository, regardless of chronic HTTP failures"
+        dpkg-divert --rename --remove /etc/apt/sources.list.d/google-chrome.list
+    ;;
+esac
+
+exit 0
