@@ -1,3 +1,12 @@
+jolicloud-apt (0.6.2) robby; urgency=low
+
+  * Added diversion rule of Google Chrome's APT repository. Many
+    reported problems about their HTTP server not fulfilling APT
+    requests fast enough. Temporary rule to take them out of the APT
+    update until the issue is resolved upstream.
+
+ -- Adam McDaniel <adam@jolicloud.org>  Mon, 29 Mar 2010 13:28:15 -0600
+
 jolicloud-apt (0.6.1) robby; urgency=low
 
   * Do not reinstall third-party keys if they are already in APT's
