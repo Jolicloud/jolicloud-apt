@@ -1,3 +1,11 @@
+jolicloud-apt (0.6.3) robby; urgency=low
+
+  * Removed Miro from third-party repository list, atleast until they
+    can produce a proper APT repository that authenticates itself
+    correctly.
+
+ -- Adam McDaniel <adam@jolicloud.org>  Thu, 08 Apr 2010 14:12:51 -0600
+
 jolicloud-apt (0.6.2) robby; urgency=low
 
   * Added diversion rule of Google Chrome's APT repository. Many
