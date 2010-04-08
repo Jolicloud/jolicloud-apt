@@ -1,5 +1,4 @@
 etc/apt/sources.list.d/medibuntu.list
-etc/apt/sources.list.d/miro.list
 etc/apt/sources.list.d/openoffice.list
 etc/apt/sources.list.d/pidgin.list
 etc/apt/sources.list.d/telepathy.list
