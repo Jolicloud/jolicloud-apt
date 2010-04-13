@@ -1,1 +1,2 @@
 APT::Cache-Limit "50331648";
+Acquire::http::Pipeline-Depth "0";
