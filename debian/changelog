@@ -1,3 +1,12 @@
+jolicloud-apt (0.6.4) robby; urgency=high
+
+  * Increase APT Cache-Limit to import more complex APT repositories
+  * Set Acquire::http::Pipeline-Depth to "0" to workaround Google Chrome
+    APT issue
+  * Disabled medibuntu due to major issues with the upstream provider.
+
+ -- Adam McDaniel <adam@jolicloud.org>  Mon, 19 Apr 2010 09:49:28 -0600
+
 jolicloud-apt (0.6.3) robby; urgency=low
 
   * Removed Miro from third-party repository list, atleast until they
