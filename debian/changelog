@@ -1,3 +1,9 @@
+jolicloud-apt (0.6.6) robby; urgency=low
+
+  * add key for new wine ppa
+
+ -- Benjamin Ryzman <benjamin@jolicloud.org>  Mon, 21 Jun 2010 09:30:58 +0200
+
 jolicloud-apt (0.6.5) robby; urgency=low
 
   * replace old official wine repository with new official ppa one
