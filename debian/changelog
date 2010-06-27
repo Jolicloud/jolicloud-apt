@@ -1,3 +1,11 @@
+jolicloud-apt (0.6.7) robby; urgency=low
+
+  * Set debian-compatibily level to 5
+  * Removed jolicloud-apt-dev-repository package from the jolicloud-apt
+    source.
+
+ -- Adam McDaniel <adam@jolicloud.org>  Sun, 27 Jun 2010 15:46:07 -0600
+
 jolicloud-apt (0.6.6) robby; urgency=low
 
   * add key for new wine ppa
