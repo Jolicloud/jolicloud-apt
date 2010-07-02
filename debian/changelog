@@ -1,3 +1,10 @@
+jolicloud-apt (0.6.8) robby; urgency=low
+
+  * Added jolicloud-apt-upgrade-repository for accessing the new
+    upgraded UI
+
+ -- Adam McDaniel <adam@jolicloud.org>  Fri, 02 Jul 2010 04:09:28 -0600
+
 jolicloud-apt (0.6.7) robby; urgency=low
 
   * Set debian-compatibily level to 5
