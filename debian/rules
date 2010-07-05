@@ -51,6 +51,17 @@ binary-arch: build install
 	dh_compress
 	dh_fixperms
 	dh_installdeb
+	
+	# We do not want any of jolicloud-apt's /etc/apt/sources.list.d/ files
+	# to be treated as conffiles. This happens automatically with
+	# dh_installdeb notices that it's installing files under /etc/, however
+	# this unnecessarially complicates upgrades if any source files were
+	# changed, or if the jolicloud-apt-* package is removed.
+	for d in `find debian -name DEBIAN -type d`; do \
+		grep -v sources.list.d $$d/conffiles > $$d/conffiles-new; \
+		mv $$d/conffiles-new $$d/conffiles; \
+	done
+	
 	dh_shlibdeps
 	dh_gencontrol
 	dh_md5sums
