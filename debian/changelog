@@ -1,3 +1,10 @@
+jolicloud-apt (0.6.9) robby; urgency=low
+
+  * Ensure all /etc/apt/sources.list.d/* files are not treated as
+    conffiles
+
+ -- Adam McDaniel <adam@jolicloud.org>  Mon, 05 Jul 2010 10:55:04 -0600
+
 jolicloud-apt (0.6.8) robby; urgency=low
 
   * Added jolicloud-apt-upgrade-repository for accessing the new
