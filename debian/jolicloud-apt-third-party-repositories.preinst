@@ -5,6 +5,9 @@ set -e
 case "$1" in
     install|upgrade)
         echo "* Diverting google-chrome's APT repository due to chronic HTTP failures"
+        if [ ! -d /usr/share/jolicloud-apt ] ; then
+            install -d /usr/share/jolicloud-apt
+        fi
         dpkg-divert --add --package "jolicloud-apt-third-party-repositories" --divert /usr/share/jolicloud-apt/google-chrome-diverted.list --rename /etc/apt/sources.list.d/google-chrome.list
     ;;
 esac
