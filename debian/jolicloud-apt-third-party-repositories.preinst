@@ -4,11 +4,13 @@ set -e
 
 case "$1" in
     install|upgrade)
-        echo "* Diverting google-chrome's APT repository due to chronic HTTP failures"
         if [ ! -d /usr/share/jolicloud-apt ] ; then
             install -d /usr/share/jolicloud-apt
         fi
+        echo "* Diverting google-chrome's APT repository due to chronic HTTP failures"
         dpkg-divert --add --package "jolicloud-apt-third-party-repositories" --divert /usr/share/jolicloud-apt/google-chrome-diverted.list --rename /etc/apt/sources.list.d/google-chrome.list
+        echo "* Diverting Christopher Korn VLC repository due to withdrawal"
+        dpkg-divert --add --package "jolicloud-apt-third-party-repositories" --divert /usr/share/jolicloud-apt/vlc-diverted.list --rename /etc/apt/sources.list.d/vlc.list
     ;;
 esac
 
