@@ -1,3 +1,9 @@
+jolicloud-apt (0.6.10.1) robby; urgency=low
+
+  * update preinst and postrm for VLC PPA
+
+ -- Benjamin Ryzman <benjamin@jolicloud.org>  Tue, 17 Aug 2010 09:33:07 +0200
+
 jolicloud-apt (0.6.10) robby; urgency=high
 
   * Fix bug in jolicloud-apt-third-party-repostitories preinst script
