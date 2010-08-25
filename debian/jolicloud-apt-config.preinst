@@ -10,3 +10,10 @@ set -e
 
 #DEBHELPER#
 
+
+# Remove the depricated /etc/apt/preferences which could still exist from
+# the previous version of jolicloud-apt-config
+
+if [ -e "/etc/apt/preferences" ]; then
+    rm -f /etc/apt/preferences
+fi
