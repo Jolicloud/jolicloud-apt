@@ -1,3 +1,11 @@
+jolicloud-apt (1.1.0) robby-lucid; urgency=low
+
+  * Transitioned /etc/apt/preferences to /etc/apt/preferences.d/10-
+    jolicloud
+  * Evened out Jolicloud and Ubuntu APT preferences to ease upgrading
+
+ -- Adam McDaniel <adam@jolicloud.org>  Mon, 06 Sep 2010 00:51:21 -0600
+
 jolicloud-apt (1.0.0) robby; urgency=low
 
   * Enabled jolicloud mirror of medibuntu repository
