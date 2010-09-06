@@ -1,3 +1,11 @@
+jolicloud-apt (1.0.0) robby; urgency=low
+
+  * Enabled jolicloud mirror of medibuntu repository
+  * Adjusted version to reflect Robby V1.0 release
+  * Issued a package killall to jolicloud-apt-upgrade-repository (<<1.0.0)
+
+ -- Adam McDaniel <adam@jolicloud.org>  Mon, 06 Sep 2010 00:33:10 -0600
+
 jolicloud-apt (0.6.10.1) robby; urgency=low
 
   * update preinst and postrm for VLC PPA
