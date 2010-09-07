@@ -25,6 +25,16 @@ case "$1" in
            grep -q "	install$"; then
             apt-queue "apt-get -q -y remove --purge jolicloud-apt-upgrade-repository"
         fi
+
+        # Earlier V1.1 instructions described manually creating a file
+        # called jolicloud-lucid.list. This is now redundant as the
+        # contents of this file are automatically included in
+        # jolicloud.list, as of 1.1.1
+        if dpkg --compare-versions "$2" lt-nl "1.1.1" && \
+            [ -e /etc/apt/sources.list.d/jolicloud-lucid.list ]; then
+            echo "* Removing redundant jolicloud-lucid.list"
+            rm -f /etc/apt/sources.list.d/jolicloud-lucid.list
+        fi
         ;;
 
     abort-upgrade|abort-deconfigure|abort-remove)
