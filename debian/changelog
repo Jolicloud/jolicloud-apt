@@ -1,3 +1,16 @@
+jolicloud-apt (1.1.1) robby-lucid; urgency=low
+
+  * Removed depricated jolicloud-upgrade.list from jolicloud-apt-
+    upgrade-repository
+  * Added robby-lucid repository into main jolicloud.list
+  * Convert /etc/apt/sources.list to /etc/apt/sources.list.d/ubuntu.list,
+    and from jaunty to lucid
+  * Completly killed jolicloud-apt-upgrade-repository
+  * Converted third-party repositories to reference lucid repo
+  * Delete redundant jolicloud-lucid.list file when upgrading to V1.1
+
+ -- Adam McDaniel <adam@jolicloud.org>  Tue, 07 Sep 2010 14:47:48 -0600
+
 jolicloud-apt (1.1.0) robby-lucid; urgency=low
 
   * Transitioned /etc/apt/preferences to /etc/apt/preferences.d/10-
