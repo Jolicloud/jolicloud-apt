@@ -27,14 +27,6 @@ Description: Jolicloud Test APT configuration
  Configures your APT system to add the Jolicloud (test) repository into your
  netbook.
 
-Package: jolicloud-apt-upgrade-repository
-Architecture: all
-Pre-depends: apt-queue
-Depends: jolicloud-apt-config, jolicloud-apt-repository
-Description: Jolicloud Upgrade APT configuration
- Configures your APT system to add the Jolicloud (upgrade) repository into
- your netbook.
-
 Package: jolicloud-apt-third-party-repositories
 Architecture: all
 Description: Jolicloud APT 3rd party repositories

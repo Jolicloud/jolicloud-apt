@@ -12,9 +12,11 @@ set -e
 
 case "$1" in
     configure)
-        # Issue a killall on this package if the version we're upgrading
-        # from is less than 1.0.0
-        if dpkg --compare-versions "$2" lt "1.0.0"; then
+        # Issue a killall on the upgrade package if the version we're
+        # upgrading from is less than 1.1.1
+        if dpkg --compare-versions "$2" lt "1.1.1" &&
+           dpkg --get-selections | grep jolicloud-apt-upgrade-repository | \
+           grep -q "	install$"; then
             apt-queue "apt-get -q -y remove --purge jolicloud-apt-upgrade-repository"
         fi
     ;;
