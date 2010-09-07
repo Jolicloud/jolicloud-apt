@@ -1,4 +1,4 @@
 # Wine for Ubuntu and Ubuntu derivatives
 # Warning: these are beta packages
-deb http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu jaunty main 
-deb-src http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu jaunty main 
+deb http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu lucid main 
+deb-src http://ppa.launchpad.net/ubuntu-wine/ppa/ubuntu lucid main 

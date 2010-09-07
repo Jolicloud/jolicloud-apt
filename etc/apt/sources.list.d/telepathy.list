@@ -1,2 +1,2 @@
-deb http://ppa.launchpad.net/telepathy/ppa/ubuntu jaunty main
-deb-src http://ppa.launchpad.net/telepathy/ppa/ubuntu jaunty main
+deb http://ppa.launchpad.net/telepathy/ppa/ubuntu lucid main
+deb-src http://ppa.launchpad.net/telepathy/ppa/ubuntu lucid main
