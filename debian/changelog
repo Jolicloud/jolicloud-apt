@@ -1,3 +1,9 @@
+jolicloud-apt (1.1.2+oem) robby-oem; urgency=low
+
+  * Create a robby-oem branch in git; tie to robby-oem APT repository
+
+ -- Adam McDaniel <adam@jolicloud.org>  Mon, 11 Oct 2010 23:56:21 -0600
+
 jolicloud-apt (1.1.2) robby; urgency=low
 
   * Bumped the pin priority of Jolicloud (600) over Ubuntu (500)
