@@ -1,3 +1,10 @@
+jolicloud-apt (1.1.2) robby; urgency=low
+
+  * Bumped the pin priority of Jolicloud (600) over Ubuntu (500)
+  * Activate universe repository if not doneso already
+
+ -- Adam McDaniel <adam@jolicloud.org>  Mon, 11 Oct 2010 23:48:36 -0600
+
 jolicloud-apt (1.1.1) robby-lucid; urgency=low
 
   * Removed depricated jolicloud-upgrade.list from jolicloud-apt-
