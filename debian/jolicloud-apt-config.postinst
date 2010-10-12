@@ -23,6 +23,8 @@ case "$1" in
             [ ! -e /etc/apt/sources.list.d/ubuntu.list ] && \
             [ -e /etc/apt/sources.list ]; then
             mv -v /etc/apt/sources.list /etc/apt/sources.list.d/ubuntu.list
+            # Activate universe repository if not doneso already
+            perl -pi -e 's;^# ?(.*? universe)$;$1;' /etc/apt/sources.list.d/ubuntu.list
             perl -pi -e 's/jaunty/lucid/g' /etc/apt/sources.list.d/ubuntu.list
             cat > /etc/apt/sources.list << EOF 
 # The legacy Ubuntu APT sources.list has been moved to the file
