@@ -1,6 +1,6 @@
 Package: *
 Pin: release o=Jolicloud
-Pin-Priority: 500
+Pin-Priority: 600
 
 Package: *
 Pin: release o=Ubuntu
