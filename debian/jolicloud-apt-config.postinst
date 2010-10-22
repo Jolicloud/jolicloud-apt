@@ -23,13 +23,19 @@ case "$1" in
             [ ! -e /etc/apt/sources.list.d/ubuntu.list ] && \
             [ -e /etc/apt/sources.list ]; then
             mv -v /etc/apt/sources.list /etc/apt/sources.list.d/ubuntu.list
-            # Activate universe repository if not doneso already
-            perl -pi -e 's;^# ?(.*? universe)$;$1;' /etc/apt/sources.list.d/ubuntu.list
             perl -pi -e 's/jaunty/lucid/g' /etc/apt/sources.list.d/ubuntu.list
             cat > /etc/apt/sources.list << EOF 
 # The legacy Ubuntu APT sources.list has been moved to the file
 # /etc/apt/sources.list.d/ubuntu.list
 EOF
+        fi
+
+        if dpkg --compare-versions "$2" le "1.1.2"; then
+            # Activate universe repository
+            perl -pi -e 's;^# ?(.*? universe)$;$1;' /etc/apt/sources.list.d/ubuntu.list
+
+            # Activate multiverse repository
+            perl -pi -e 's;^# ?(.*? multiverse)$;$1;' /etc/apt/sources.list.d/ubuntu.list
         fi
 
         # Import Jolicloud's public key into the system's apt-key utility as an
