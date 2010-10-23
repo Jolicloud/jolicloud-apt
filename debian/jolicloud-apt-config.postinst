@@ -36,6 +36,13 @@ EOF
 
             # Activate multiverse repository
             perl -pi -e 's;^# ?(.*? multiverse)$;$1;' /etc/apt/sources.list.d/ubuntu.list
+
+            # Convert any Ubuntu lucid-security/lucid-updates repository
+            # URLs to use Jolicloud's mirrors. This allows Jolicloud to
+            # validate packages distributed on these channels, ensuring no
+            # incompatibilities are exposed to end-users without Jolicloud
+            # QA approval.
+            perl -pi -e 's;^(.*?://).*?ubuntu.com/ubuntu/? (lucid-(security|updates).*?)$;$1apt.jolicloud.org/mirrors ubuntu-$2;' /etc/apt/sources.list.d/ubuntu.list
         fi
 
         # Import Jolicloud's public key into the system's apt-key utility as an
