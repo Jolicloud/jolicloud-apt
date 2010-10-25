@@ -1,3 +1,14 @@
+jolicloud-apt (1.1.3) robby; urgency=low
+
+  * Use all repository servers for medibuntu mirror.
+  * Activate multiverse repository if commented out
+  * Convert any Ubuntu lucid-security/lucid-updates repository URLs to
+    use Jolicloud's mirrors. This allows Jolicloud to validate packages
+    distributed on these channels, ensuring no incompatibilities are
+    exposed to end-users without Jolicloud QA approval.
+
+ -- Adam McDaniel <adam@jolicloud.org>  Sun, 24 Oct 2010 23:19:10 -0600
+
 jolicloud-apt (1.1.2) robby; urgency=low
 
   * Bumped the pin priority of Jolicloud (600) over Ubuntu (500)
