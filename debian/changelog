@@ -1,3 +1,18 @@
+jolicloud-apt (1.0.1) robby; urgency=low
+
+  * Removed depricated jolicloud-upgrade.list from jolicloud-apt-
+    upgrade-repository
+  * Completly killed jolicloud-apt-upgrade-repository
+  * Use all repository servers for medibuntu mirror.
+  * Converted jolicloud-apt-config.postinst to only run when configuring
+    the package
+  * Convert any Ubuntu jaunty-security/jaunty-updates repository URLs to
+    use Jolicloud's mirrors. This allows Jolicloud to validate packages
+    distributed on these channels, ensuring no incompatibilities are
+    exposed to end-users without Jolicloud QA approval.
+
+ -- Adam McDaniel <adam@jolicloud.org>  Mon, 25 Oct 2010 00:10:55 -0600
+
 jolicloud-apt (1.0.0) robby; urgency=low
 
   * Enabled jolicloud mirror of medibuntu repository
