@@ -62,6 +62,15 @@ uzk6TVasdffPQXwRhpMBKB7imQ==
 -----END PGP PUBLIC KEY BLOCK-----
 EOF
         fi
+
+        if dpkg --compare-versions "$2" le "1.0.1"; then
+            # Convert any Ubuntu lucid-security/lucid-updates repository
+            # URLs to use Jolicloud's mirrors. This allows Jolicloud to
+            # validate packages distributed on these channels, ensuring no
+            # incompatibilities are exposed to end-users without Jolicloud
+            # QA approval.
+            perl -pi -e 's;^(.*?://).*?ubuntu.com/ubuntu/? (jaunty-(security|updates).*?)$;$1apt.jolicloud.org/mirrors ubuntu-$2;' /etc/apt/sources.list
+        fi
         ;;
 
     abort-upgrade|abort-deconfigure|abort-remove)
