@@ -1,3 +1,19 @@
+jolicloud-apt (1.1.4) robby-lucid; urgency=low
+
+  * Merged medibuntu, openoffice, transmission, and wine APT definitions
+    into single jolicloud-mirrors.list; activated mirrors on the APT
+    server.
+  * Depricated pidgin and telepathy APT definitions: all externally-
+    linked third-party repos
+  * New apt preference rule: Allow Google to update the google-
+    talkplugin from their mirror immediately, whenever a new version is
+    released
+  * New apt preference rule: Allow Ubuntu to update firefox but only to
+    3.6.11, over-ruling Jolicloud's version.
+  * Ensure the Ubuntu "backports" repository is commented out.
+
+ -- Adam McDaniel <adam@jolicloud.org>  Fri, 29 Oct 2010 13:27:49 -0600
+
 jolicloud-apt (1.1.3) robby; urgency=low
 
   * Use all repository servers for medibuntu mirror.
