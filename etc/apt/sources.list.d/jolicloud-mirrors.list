@@ -1,7 +1,7 @@
 ## Medibuntu mirror
 # deb http://packages.medibuntu.org/ lucid free non-free
-deb http://apt-nonfree.jolicloud.org/mirrors medibuntu-lucid free non-free
-deb-src http://apt-nonfree.jolicloud.org/mirrors medibuntu-lucid free non-free
+deb http://apt.jolicloud.org/mirrors medibuntu-lucid free non-free
+deb-src http://apt.jolicloud.org/mirrors medibuntu-lucid free non-free
 
 # Openoffice mirror
 # deb http://ppa.launchpad.net/openoffice-pkgs/ppa/ubuntu lucid main

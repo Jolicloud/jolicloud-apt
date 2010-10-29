@@ -3,9 +3,3 @@ deb-src http://apt.jolicloud.org robby main directory jolicloud
 
 deb http://apt.jolicloud.org robby-upgrade-v1.1 main directory jolicloud
 deb-src http://apt.jolicloud.org robby-upgrade-v1.1 main directory jolicloud
-
-deb http://apt-nonfree.jolicloud.org robby restricted
-deb-src http://apt-nonfree.jolicloud.org robby restricted
-
-deb http://apt-nonfree.jolicloud.org robby-upgrade-v1.1 restricted
-deb-src http://apt-nonfree.jolicloud.org robby-upgrade-v1.1 restricted
