@@ -1,0 +1,5 @@
+# Allow Google to update the google-talkplugin from their mirror
+# immediately, whenever a new version is released
+Package: google-talkplugin
+Pin: release l=Google
+Pin-Priority: 600
