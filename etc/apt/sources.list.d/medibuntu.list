@@ -1,4 +1,0 @@
-## Medibuntu
-## Please report any bug on https://bugs.launchpad.net/medibuntu/
-deb http://apt-int.jolicloud.org/mirrors medibuntu-lucid free non-free
-deb-src http://apt-int.jolicloud.org/mirrors medibuntu-lucid free non-free

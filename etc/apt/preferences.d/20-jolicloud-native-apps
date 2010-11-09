@@ -1,0 +1,11 @@
+# Allow Ubuntu to update firefox but only to 3.6.11, over-ruling
+# Jolicloud's version.
+Package: firefox
+Pin: version 3.6.11*
+Pin-Priority: 600
+
+# Allow Google to update the google-talkplugin from their mirror
+# immediately, whenever a new version is released
+Package: google-talkplugin
+Pin: release l=Google
+Pin-Priority: 600
