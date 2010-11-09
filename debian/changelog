@@ -1,29 +1,30 @@
-jolicloud-apt (1.1.4) robby-lucid; urgency=low
+jolicloud-apt (1.1.4+oem) robby-oem; urgency=low
 
-  * Merged medibuntu, openoffice, transmission, and wine APT definitions
-    into single jolicloud-mirrors.list; activated mirrors on the APT
-    server.
-  * Depricated pidgin and telepathy APT definitions: all externally-
-    linked third-party repos
-  * New apt preference rule: Allow Google to update the google-
-    talkplugin from their mirror immediately, whenever a new version is
-    released
-  * New apt preference rule: Allow Ubuntu to update firefox but only to
-    3.6.11, over-ruling Jolicloud's version.
-  * Ensure the Ubuntu "backports" repository is commented out.
+  * Merged robby-lucid into robby-oem
 
- -- Adam McDaniel <adam@jolicloud.org>  Fri, 29 Oct 2010 13:27:49 -0600
+    jolicloud-apt (1.1.4) robby-lucid; urgency=low
+      * Merged medibuntu, openoffice, transmission, and wine APT definitions
+        into single jolicloud-mirrors.list; activated mirrors on the APT
+        server.
+      * Depricated pidgin and telepathy APT definitions: all externally-
+        linked third-party repos
+      * New apt preference rule: Allow Google to update the google-
+        talkplugin from their mirror immediately, whenever a new version is
+        released
+      * New apt preference rule: Allow Ubuntu to update firefox but only to
+        3.6.11, over-ruling Jolicloud's version.
+      * Ensure the Ubuntu "backports" repository is commented out.
 
-jolicloud-apt (1.1.3) robby; urgency=low
+    jolicloud-apt (1.1.3) robby; urgency=low
 
-  * Use all repository servers for medibuntu mirror.
-  * Activate multiverse repository if commented out
-  * Convert any Ubuntu lucid-security/lucid-updates repository URLs to
-    use Jolicloud's mirrors. This allows Jolicloud to validate packages
-    distributed on these channels, ensuring no incompatibilities are
-    exposed to end-users without Jolicloud QA approval.
+      * Use all repository servers for medibuntu mirror.
+      * Activate multiverse repository if commented out
+      * Convert any Ubuntu lucid-security/lucid-updates repository URLs to
+        use Jolicloud's mirrors. This allows Jolicloud to validate packages
+        distributed on these channels, ensuring no incompatibilities are
+        exposed to end-users without Jolicloud QA approval.
 
- -- Adam McDaniel <adam@jolicloud.org>  Sun, 24 Oct 2010 23:19:10 -0600
+ -- Adam McDaniel <adam@jolicloud.org>  Tue, 09 Nov 2010 18:49:43 +0100
 
 jolicloud-apt (1.1.2+oem) robby-oem; urgency=low
 
