@@ -30,27 +30,12 @@ case "$1" in
 EOF
         fi
 
-        if dpkg --compare-versions "$2" le "1.1.2"; then
-            # Activate universe repository
-            perl -pi -e 's;^# ?(.*? universe)$;$1;' /etc/apt/sources.list.d/ubuntu.list
-
-            # Activate multiverse repository
-            perl -pi -e 's;^# ?(.*? multiverse)$;$1;' /etc/apt/sources.list.d/ubuntu.list
-
-            # Convert any Ubuntu lucid-security/lucid-updates repository
-            # URLs to use Jolicloud's mirrors. This allows Jolicloud to
-            # validate packages distributed on these channels, ensuring no
-            # incompatibilities are exposed to end-users without Jolicloud
-            # QA approval.
-            perl -pi -e 's;^(.*?://).*?ubuntu.com/ubuntu/? (lucid-(security|updates).*?)$;$1apt.jolicloud.org/mirrors ubuntu-$2;' /etc/apt/sources.list.d/ubuntu.list
-        fi
-
-        if dpkg --compare-versions "$2" le "1.1.3"; then
-            # Ensure the Ubuntu "backports" repository is commented out. A
-            # mirror pointing to it will be activated if/when Jolicloud is
-            # ready to migrate to this Ubuntu distribution's backport
-            # packages.
-            perl -pi -e 's;^([^#].*?backports.*?)$;# $1;' /etc/apt/sources.list.d/ubuntu.list
+        if dpkg --compare-versions "$2" lt "1.1.6"; then
+            # Ensure the Ubuntu "updates", "security" and "backports"
+            # repositories are commented out. A mirror pointing to it will
+            # be activated by Jolicloud to migrate to the Ubuntu
+            # distribution's packages.
+            perl -pi -e 's;^([^#].*?(lucid|jaunty)-(backports|security|updates).*?)$;# $1;' /etc/apt/sources.list.d/ubuntu.list
         fi
 
         # Import Jolicloud's public key into the systemis's apt-key utility as an
