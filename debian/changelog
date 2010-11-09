@@ -1,3 +1,12 @@
+jolicloud-apt (1.1.5) robby-lucid; urgency=low
+
+  * Merge all mirrors hosted by Jolicloud into
+    "apt.jolicloud.org/mirrors robby"
+  * Comment out ubuntu backports, security and updates from original
+    ubuntu list
+
+ -- Adam McDaniel <adam@jolicloud.org>  Tue, 09 Nov 2010 20:04:52 +0100
+
 jolicloud-apt (1.1.4+oem) robby-oem; urgency=low
 
   * Merged robby-lucid into robby-oem
