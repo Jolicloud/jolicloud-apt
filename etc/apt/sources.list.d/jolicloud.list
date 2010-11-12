@@ -11,8 +11,15 @@ deb-src http://apt.jolicloud.org robby main directory jolicloud
 deb http://apt-nonfree.jolicloud.org robby restricted
 deb-src http://apt-nonfree.jolicloud.org robby restricted
 
+# Jolicloud Robby-oem is the latest stable release of Jolicloud 1.x
+# specific for OEM distributions and hardware. It contains subtle package
+# changes that are specific to the OEM release, functioning mostly as a
+# preview release for the stable product.
+
 deb http://apt.jolicloud.org robby-oem main directory jolicloud
 deb-src http://apt.jolicloud.org robby-oem main directory jolicloud
+deb http://apt-nonfree.jolicloud.org robby-oem restricted
+deb-src http://apt-nonfree.jolicloud.org robby-oem restricted
 
 # Third-party repositories, like PPAs, Ubuntu's backports, security, and
 # updates, and other third-party sources are all mirrored by Jolicloud's
