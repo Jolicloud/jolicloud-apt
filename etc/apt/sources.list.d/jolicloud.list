@@ -1,8 +1,34 @@
+# Jolicloud Robby is the latest stable release of Jolicloud 1.x. It should
+# always be available on your Jolicloud system.
+#
+# Jolicloud utilizes OSS and non-OSS packages to find the best-possible
+# mix of program to support most available hardware possible. However, some
+# Jolicloud mirrors mandate that they only serve OSS software. As a result,
+# "restricted" packages require their own APT source and URL.
+
 deb http://apt.jolicloud.org robby main directory jolicloud
 deb-src http://apt.jolicloud.org robby main directory jolicloud
+deb http://apt-nonfree.jolicloud.org robby restricted
+deb-src http://apt-nonfree.jolicloud.org robby restricted
 
 deb http://apt.jolicloud.org robby-oem main directory jolicloud
 deb-src http://apt.jolicloud.org robby-oem main directory jolicloud
 
-deb http://apt.jolicloud.org/mirrors robby main universe multiverse free non-free restricted
-deb-src http://apt.jolicloud.org/mirrors robby main universe multiverse free non-free restricted
+# Third-party repositories, like PPAs, Ubuntu's backports, security, and
+# updates, and other third-party sources are all mirrored by Jolicloud's
+# APT network. These repositories contain packages that have been released
+# outside or after the base Ubuntu distribution and have been tested to be
+# compatibile with this Jolicloud release.
+#
+# Note that the direct APT URLs to Launchpad, Ubuntu and other third-party
+# repositories have been removed due to the potential for these APT sources
+# to release packages outside of Jolicloud's testing window.
+#
+# These packages will still be released for Jolicloud users, but only after
+# proper testing and validation can occur by the Jolicloud QA team. The
+# release conduit will be this Jolicloud mirrors source:
+
+deb http://apt.jolicloud.org/mirrors robby main universe multiverse free
+deb-src http://apt.jolicloud.org/mirrors robby main universe multiverse free
+deb http://apt-nonfree.jolicloud.org/mirrors robby non-free restricted
+deb-src http://apt-nonfree.jolicloud.org/mirrors robby non-free restricted
