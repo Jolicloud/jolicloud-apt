@@ -1,3 +1,13 @@
+jolicloud-apt (1.1.6+oem) robby-oem; urgency=low
+
+  * Added comments to jolicloud.list, plus apt-nonfree->restricted
+    sources.
+  * Added to jolicloud.list a description specific to the robby-oem
+    source.
+  * Depricated jolicloud-apt-third-party-repositories package.
+
+ -- Adam McDaniel <adam@jolicloud.org>  Fri, 12 Nov 2010 12:40:47 +0100
+
 jolicloud-apt (1.1.5+oem) robby-oem; urgency=low
 
   * Merged robby-lucid into robby-oem
