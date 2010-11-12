@@ -16,6 +16,9 @@ Description: Jolicloud APT configuration
 Package: jolicloud-apt-repository
 Architecture: all
 Depends: jolicloud-apt-config
+Provides: jolicloud-apt-third-party-repositories
+Conflicts: jolicloud-apt-third-party-repositories
+Replaces: jolicloud-apt-third-party-repositories
 Description: Jolicloud APT configuration
  Configures your APT system to add the Jolicloud repository into your
  netbook.
@@ -27,8 +30,3 @@ Description: Jolicloud Test APT configuration
  Configures your APT system to add the Jolicloud (test) repository into your
  netbook.
 
-Package: jolicloud-apt-third-party-repositories
-Architecture: all
-Description: Jolicloud APT 3rd party repositories
- Provides additional repositories to track applications directly from
- their developers.
