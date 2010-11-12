@@ -1,2 +1,13 @@
+# Jolicloud Robby is the latest stable release of Jolicloud 1.x. It should
+# always be available on your Jolicloud system.
+#
+# Jolicloud utilizes OSS and non-OSS packages to find the best-possible
+# mix of program to support most available hardware possible. However, some
+# Jolicloud mirrors mandate that they only serve OSS software. As a result,
+# "restricted" packages require their own APT source and URL.
+
 deb http://apt.jolicloud.org robby main directory jolicloud
 deb-src http://apt.jolicloud.org robby main directory jolicloud
+deb http://apt-nonfree.jolicloud.org robby restricted
+deb-src http://apt-nonfree.jolicloud.org robby restricted
+
