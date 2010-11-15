@@ -1,3 +1,10 @@
+jolicloud-apt (1.1.7) robby-lucid; urgency=low
+
+  * Remove the firefox 3.6.11 native-app pin, allowing firefox >3.6.11
+    to be installed
+
+ -- Adam McDaniel <adam@jolicloud.org>  Mon, 15 Nov 2010 17:39:16 +0100
+
 jolicloud-apt (1.1.6) robby-lucid; urgency=low
 
   * Added comments to jolicloud.list, plus apt-nonfree->restricted
