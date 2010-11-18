@@ -75,6 +75,15 @@ uzk6TVasdffPQXwRhpMBKB7imQ==
 -----END PGP PUBLIC KEY BLOCK-----
 EOF
         fi
+
+        if ! `dpkg-divert --list /etc/apt/sources.list.d/google-chrome.list | grep -q jolicloud-apt`; then
+            dpkg-divert --package jolicloud-apt --divert /usr/share/doc/jolicloud-apt-config/google-chrome-diverted.list --rename /etc/apt/sources.list.d/google-chrome.list
+        fi
+
+        if ! `dpkg-divert --list /etc/apt/sources.list.d/vlc.list | grep -q jolicloud-apt`; then
+            dpkg-divert --package jolicloud-apt --divert /usr/share/doc/jolicloud-apt-config/vlc-diverted.list --rename /etc/apt/sources.list.d/vlc.list
+        fi
+
         ;;
 
     abort-upgrade|abort-deconfigure|abort-remove)
