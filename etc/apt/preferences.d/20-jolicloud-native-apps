@@ -3,3 +3,11 @@
 Package: google-talkplugin
 Pin: release l=Google
 Pin-Priority: 600
+
+# Allow Opera to update the opera browser from their mirror
+# immediately, whenever a new version is released. Note, Package is "*"
+# beacuse if we specify "opera" here it will break installing opera if it
+# is not yet installed due to a bug in apt pinning.
+Package: *
+Pin: release o=Opera Software ASA
+Pin-Priority: 600
