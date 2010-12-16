@@ -1,3 +1,10 @@
+jolicloud-apt (1.1.8.0.1) robby-lucid; urgency=low
+
+  * Add Opera as a native app that automatically updates from its own
+    DEB source
+
+ -- Adam McDaniel <adam@jolicloud.org>  Thu, 16 Dec 2010 12:33:08 -0700
+
 jolicloud-apt (1.1.8) robby-lucid; urgency=low
 
   * Restore dpkg-divert definitions that move google-chrome.list and
