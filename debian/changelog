@@ -1,3 +1,12 @@
+jolicloud-apt (1.1.10) robby-1.1.1; urgency=low
+
+  * Allow the mirrored version of flashplugin-installer to override
+    Jolicloud's version.
+  * Removed apt-int from jolicloud.list; use apt and apt-nonfree to
+    access external APT hosts for robby-1.1.1
+
+ -- Adam McDaniel <adam@jolicloud.org>  Thu, 10 Feb 2011 15:24:12 -0700
+
 jolicloud-apt (1.1.9) robby-1.1.1; urgency=low
 
   * Pointed main jolicloud repositories to robby-1.1.1
