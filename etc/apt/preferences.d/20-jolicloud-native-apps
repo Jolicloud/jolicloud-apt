@@ -11,3 +11,10 @@ Pin-Priority: 600
 Package: *
 Pin: release o=Opera Software ASA
 Pin-Priority: 600
+
+# Allow the mirrored version of flashplugin-installer to override
+# Jolicloud's version.
+Package: flashplugin-installer
+Pin: release l=Jolicloud 1.1.1 Mirrors
+Pin-Priority: 650
+
