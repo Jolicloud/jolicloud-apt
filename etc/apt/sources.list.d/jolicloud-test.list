@@ -1,8 +1,0 @@
-# Jolicloud robby-test repository provides access to the testing packages
-# that are related to the current stable version of Jolicloud 1.x, but are
-# not related to the next major stable release.
-
-deb http://apt.jolicloud.org robby-test main directory jolicloud
-deb-src http://apt.jolicloud.org robby-test main directory jolicloud
-deb http://apt-nonfree.jolicloud.org robby-test restricted
-deb-src http://apt-nonfree.jolicloud.org robby-test restricted
