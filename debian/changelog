@@ -1,3 +1,14 @@
+jolicloud-apt (1.2.2) robby-1.2; urgency=low
+
+  * Added github URLs to debian/control, plus LICENSE & README placeholders
+  * Removed the flashplugin-installer native-app pin; this is no longer
+    required thanks to jolicloud-tweaks 1.2.3
+  * Removed jolicloud-apt-test-repository; no longer applicable under
+    Joli OS 1.2
+  * Use externally hosted robby-1.2 deb URLs
+
+ -- Adam McDaniel <adam@jolicloud.org>  Fri, 04 Mar 2011 01:34:06 -0700
+
 jolicloud-apt (1.2.1) robby-1.2; urgency=low
 
   * Allow the mirrored version of flashplugin-installer to override
