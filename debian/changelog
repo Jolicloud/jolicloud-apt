@@ -1,3 +1,9 @@
+jolicloud-apt (1.2.3) robby-1.2.1; urgency=low
+
+  * Pointed main jolicloud repositories to apt-int robby-1.2.1
+
+ -- Adam McDaniel <adam@jolicloud.org>  Wed, 09 Mar 2011 11:17:01 -0700
+
 jolicloud-apt (1.2.2) robby-1.2; urgency=low
 
   * Added github URLs to debian/control, plus LICENSE & README placeholders
