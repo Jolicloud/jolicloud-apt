@@ -5,11 +5,15 @@
 # mix of program to support most available hardware possible. However, some
 # Jolicloud mirrors mandate that they only serve OSS software. As a result,
 # "restricted" packages require their own APT source and URL.
+#
+# The "any" subdomain name can be replaced with a country-specific, or a
+# mirror-specific name. This can be useful for forcing a specific country
+# as a source, or for debugging individual mirrors.
 
-deb http://apt.jolicloud.org robby-1.2 main directory jolicloud
-deb-src http://apt.jolicloud.org robby-1.2 main directory jolicloud
-deb http://apt-nonfree.jolicloud.org robby-1.2 restricted
-deb-src http://apt-nonfree.jolicloud.org robby-1.2 restricted
+deb http://any.apt.jolicloud.org/apt robby-1.2 main directory jolicloud
+deb-src http://any.apt.jolicloud.org/apt robby-1.2 main directory jolicloud
+deb http://any.apt.jolicloud.org/apt-nonfree robby-1.2 restricted
+deb-src http://any.apt.jolicloud.org/apt-nonfree robby-1.2 restricted
 
 # Third-party repositories, like PPAs, Ubuntu's backports, security, and
 # updates, and other third-party sources are all mirrored by Jolicloud's
@@ -25,8 +29,8 @@ deb-src http://apt-nonfree.jolicloud.org robby-1.2 restricted
 # proper testing and validation can occur by the Jolicloud QA team. The
 # release conduit will be this Jolicloud mirrors source:
 
-deb http://apt.jolicloud.org/mirrors robby-1.2 main universe multiverse free
-deb-src http://apt.jolicloud.org/mirrors robby-1.2 main universe multiverse free
-deb http://apt-nonfree.jolicloud.org/mirrors robby-1.2 non-free restricted
-deb-src http://apt-nonfree.jolicloud.org/mirrors robby-1.2 non-free restricted
+deb http://any.apt.jolicloud.org/apt/mirrors robby-1.2 main universe multiverse free
+deb-src http://any.apt.jolicloud.org/apt/mirrors robby-1.2 main universe multiverse free
+deb http://any.apt.jolicloud.org/apt-nonfree/mirrors robby-1.2 non-free restricted
+deb-src http://any.apt.jolicloud.org/apt-nonfree/mirrors robby-1.2 non-free restricted
 
