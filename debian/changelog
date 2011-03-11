@@ -1,3 +1,11 @@
+jolicloud-apt (1.2.2.1) robby-1.2; urgency=low
+
+  * Restore flashplugin-installer native-app pin; required by jolicloud-
+    restore-utility as a fallback manual fix for flash
+  * Updated external APT URLs to http://any.apt.jolicloud.org/apt(-nonfree)
+
+ -- Adam McDaniel <adam@jolicloud.org>  Thu, 10 Mar 2011 13:27:14 -0700
+
 jolicloud-apt (1.2.2) robby-1.2; urgency=low
 
   * Added github URLs to debian/control, plus LICENSE & README placeholders
