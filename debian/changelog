@@ -1,3 +1,9 @@
+jolicloud-apt (1.3.0) robby-1.3; urgency=low
+
+  * Pointed main jolicloud repositories to apt-int robby-1.3
+
+ -- Adam McDaniel <adam@jolicloud.org>  Mon, 18 Apr 2011 08:38:12 -0600
+
 jolicloud-apt (1.2.3) robby-1.2.1; urgency=low
 
   * Pointed main jolicloud repositories to apt-int robby-1.2.1
