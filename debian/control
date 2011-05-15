@@ -8,16 +8,8 @@ Homepage: http://www.jolicloud.com
 Vcs-Git: git://github.com/jolicloud/jolicloud-apt.git
 Vcs-Browser: https://github.com/jolicloud/jolicloud-apt
 
-Package: jolicloud-apt-config
-Architecture: all
-Description: Jolicloud APT configuration
- Configures your APT system to give priority
- to Jolicloud packages so that you have a stable
- applications directory and Jolicloud system.
-
 Package: jolicloud-apt-repository
 Architecture: all
-Depends: jolicloud-apt-config
 Provides: jolicloud-apt-third-party-repositories
 Conflicts: jolicloud-apt-third-party-repositories
 Replaces: jolicloud-apt-third-party-repositories
