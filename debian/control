@@ -8,12 +8,9 @@ Homepage: http://www.jolicloud.com
 Vcs-Git: git://github.com/jolicloud/jolicloud-apt.git
 Vcs-Browser: https://github.com/jolicloud/jolicloud-apt
 
-Package: jolicloud-apt-repository
+Package: jolicloud-apt
 Architecture: all
-Provides: jolicloud-apt-third-party-repositories
-Conflicts: jolicloud-apt-third-party-repositories
-Replaces: jolicloud-apt-third-party-repositories
 Description: Jolicloud APT configuration
  Configures your APT system to add the Jolicloud repository into your
- netbook.
+ Ubuntu workstation.
 
