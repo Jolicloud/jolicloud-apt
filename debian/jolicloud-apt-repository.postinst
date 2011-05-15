@@ -18,22 +18,42 @@ set -e
 
 case "$1" in
     configure)
-        # Issue a killall on the upgrade package if the version we're
-        # upgrading from is less than 1.1.1
-        if dpkg --compare-versions "$2" lt "1.1.1" &&
-           dpkg --get-selections | grep jolicloud-apt-upgrade-repository | \
-           grep -q "	install$"; then
-            apt-queue "apt-get -q -y remove --purge jolicloud-apt-upgrade-repository"
-        fi
+        # Import Jolicloud's public key into the systemis's apt-key utility
+        # as an authenticated repository.
 
-        # Earlier V1.1 instructions described manually creating a file
-        # called jolicloud-lucid.list. This is now redundant as the
-        # contents of this file are automatically included in
-        # jolicloud.list, as of 1.1.1
-        if dpkg --compare-versions "$2" lt-nl "1.1.1" && \
-            [ -e /etc/apt/sources.list.d/jolicloud-lucid.list ]; then
-            echo "* Removing redundant jolicloud-lucid.list"
-            rm -f /etc/apt/sources.list.d/jolicloud-lucid.list
+        if ! `apt-key list | grep -q Jolicloud`; then
+            apt-key add - <<EOF
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+mQGiBEkthNIRBACII848BrMv3su9DAv2aoQ6Csef0qUne8nn7f4P1vtew8bWmVIb
+XfGe7CKq0bZOQH/p8h5ebqX6Ys6ladv+caCc6mSUIFscchI2/VQHdlRxu4nPkHYd
++BGwH/MvCKwe1Kx1hOdSXzAM8I1R89BPYlu64WPYmxwEKmJvU8g18fMWMwCgp6k/
+ZtTf12xkL1TcFSd9iZ7006ED/i+4BiGdy66KGjfnAfmBfns2PwcuDQplPJClp+sS
+IdiP8KyIPWfaefgjTaajUd6iGUFAhPGuPsHh9T6FDaL40IUUm5QPI20olvSbEVZ+
+St/kIzikAtWN/FnAbOvArvRdboAK4/Apqg9O3PboxqvDLotCzYdEWSKghvKG6J0/
+nRt+A/4r4s8FVMqyBz+m2WMada+C6uB/UprcLtuOC+D4nKX/s5Z6ueQVvdYZR7G/
+Iq5dsQdfcMo+sE+x9DJ2A5lWQ7PeND7+8S6jLxH2wrrA+DJ7ZxH4egu0kd3TIby5
+8vqoCNoXai7bA1SXJhFB//X0Z3Td/pt86uBgiLx1pMtHA0jL6rQvSm9saWNsb3Vk
+IGRldmVsb3BlcnMgPGRldmVsb3BlcnNAam9saWNsb3VkLm9yZz6IYAQTEQIAIAUC
+SS2E0gIbAwYLCQgHAwIEFQIIAwQWAgMBAh4BAheAAAoJEDVrtpe4tF3Q0dYAoJEr
+hOYzKSLQ6LB4AJH2UkrD4FKiAJ0W1vYvfC89f/z5CZc1hyNosj5zXLkCDQRJLYTS
+EAgAj+LfIWavLM9DrV8lABMP+ES/jLrDMu3uqzXruM80Dq8DelyaPL5l1d/Qko6t
+EssUqMMeeyPwHPzqj/NNkDx/ABaKe1aYmatp044r8MJs0lTyVxibHMM+f55pgqK8
+WRW0SX9Ur/XGxem/nwRTMEcEat33n27O94SDo3r4lyiIeEdIbuKfooQf9mdKYt6G
+jSHA/649L+gIUhGNkXy78bPepz5THG8AbhI6uek4jio46LYiqKFAzO7IlIPP4A6g
+XgUIYfxK7B6TLJxmucEjrMJT3Njtpllalqsux2Im9kcZRmL4vJheqJYwoeW8ISOZ
+PYNvpW47gK1uGKjarUMNtX9e5wADBQf/fX1fkh5YLTR1HaLg9GWd14d22v0JkIcQ
+Y5A6kFM4dGpoG5WD0VG3CqPLM97YAlhcLu7Z5sidZc2QGKyn9ehwJqn+PTKx6JpL
+PHhJQQin7otl7hcqYHmEG1wQH8e3CJBx/BMbpNoQbQCMwPSXsembvwfY/MKtdvk8
+Bpp/9ZM8hXAgk15MIeSMSVQPqG/Ec1JaOkPpUoGWKXyPe29IkmzFChl1j3hv4Kxy
+ZNeQ4pm+aFxivCFJEKYF7Oem6IF+I7R2AtSnyPq9vYw1dyhhfWCS5uyL8Fzfaue8
+py1g//PlfllwTdOg6HGPpFXEpQ91hVNTuPp0O/IJa9ufvTDdzLFwTohJBBgRAgAJ
+BQJJLYTSAhsMAAoJEDVrtpe4tF3QVrwAn0HB2UBVFWONhW4EjxbjTOei3gPuAJ48
+uzk6TVasdffPQXwRhpMBKB7imQ==
+=FUz6
+-----END PGP PUBLIC KEY BLOCK-----
+EOF
         fi
         ;;
 
